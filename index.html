@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <link>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+    <title>String Manipulator App</title>
+
+</head>
+<body>
+
+<div class="jumbotron" style="text-align: center" >
+    <h1>STRING MANIPULATOR</h1>
+</div>
+
+<div id="app" >
+    
+    <input  id="inputField" v-model="myStr" >
+    <button id="button" @click="myFunction(), myFunction1(), ShowWord(myStr)" style="">show</button>
+    <ol>
+        <li><div id="outputField">{{message}}</div></li>
+        <li><div id="outputField">{{myStr1}}</div></li>
+        <li><div id="outputField">{{myStr2}}</div></li>
+    </ol>
+
+
+    <table >
+
+        <tr>
+            <td>1</td>
+            <td>
+                <div id="outputField">{{message}}</div></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>
+                <div id="outputField">{{myStr1}}</div></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>
+                <div id="outputField">{{myStr2}}</div></td>
+        </tr>
+    </table>
+</div>
+
+
+<script src="js/index.js"></script>
+</body>
+</html>
